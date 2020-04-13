@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contacts by Amadzuki</title>
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
     <!-- Header -->
@@ -12,15 +13,26 @@
       <div>searchbox</div>
       <div>new contact</div>
     </nav>
-    <!-- Main body -->
-    <main class="list-container">
-      <div id="contacts-container">
-        contacts and some details in table like structure here
-      </div>
-    </main>
-    <!-- Side Nav -->
-    <aside class="navigation">
-      show state of the data in main body: all or filtered by tag or searchbox
-    </aside>
+
+    <div class="body">
+      <!-- Side Nav -->
+      <aside class="side">
+        <div id="navigation">
+          show state of the data in main body: all or filtered by tag or
+          searchbox
+        </div>
+      </aside>
+
+      <!-- Main body -->
+      <main class="main">
+        <div id="list-container">
+          <div id="contacts-container">
+            contacts and some details in table like structure here
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="index.js"></script>
   </body>
 </html>
