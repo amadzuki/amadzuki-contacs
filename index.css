@@ -10,6 +10,21 @@
   height: 7vh;
 }
 
+.logo {
+  flex: 1;
+}
+.header .logo img {
+  height: 2rem;
+}
+
+.text-search {
+  flex: 3;
+  align-self: center;
+}
+.new-contact {
+  flex: 1;
+  align-self: center;
+}
 .body {
   display: flex;
   height: 93vh;
