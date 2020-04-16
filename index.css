@@ -2,8 +2,16 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Segoe UI", sans-serif;
 }
-
+#blur {
+  position: relative;
+}
+body #blur.active {
+  filter: blur(1em);
+  pointer-events: none;
+  user-select: none;
+}
 .header {
   display: flex;
   background-color: aqua;
@@ -12,6 +20,7 @@
 
 .logo {
   flex: 1;
+  padding: 0.5rem;
 }
 .header .logo img {
   height: 2rem;
@@ -21,11 +30,11 @@
   flex: 3;
   align-self: center;
 }
-.new-contact {
+#new-contact-button {
   flex: 1;
   align-self: center;
 }
-.body {
+.contact-body {
   display: flex;
   height: 93vh;
 }
@@ -46,4 +55,45 @@
 #navigation {
   display: flex;
   flex-direction: column;
+}
+
+.navigation-list {
+  padding: 0.5em;
+}
+
+#popup {
+  position: fixed;
+  z-index: 2;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50vw;
+  background-color: burlywood;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 1.5em;
+  box-shadow: 0 0.5em 2em rgba(0, 0, 0, 0.7);
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+#popup.active {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+#close-popup {
+  position: fixed;
+  top: -0.5em;
+  right: -0.5em;
+  height: 1.2em;
+  width: 1.2em;
+  text-align: center;
+  background-color: salmon;
+  border: solid 1px black;
+  border-radius: 1em;
+  cursor: pointer;
 }

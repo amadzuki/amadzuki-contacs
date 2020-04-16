@@ -1,2 +1,3 @@
 # amadzuki-contacs
-Simply a contact storing web application 
+
+Simply a contact storing web application
